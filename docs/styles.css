@@ -405,24 +405,26 @@ body::before {
    ============================================================ */
 .card-image-block {
   border-bottom: 1px solid var(--border);
-  overflow: hidden;
   background: var(--surface-2);
-  max-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .card-image {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 360px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
+  border-radius: var(--radius-sm);
   transition: transform var(--trans);
 }
 
 .card-image:hover {
-  transform: scale(1.015);
+  transform: scale(1.02);
 }
 
 .card-image-placeholder {
@@ -461,6 +463,45 @@ body::before {
   color: var(--gold);
 }
 
+
+/* ============================================================
+   MAP BUTTON
+   ============================================================ */
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  align-self: flex-start;
+  padding: .5rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-soft);
+  font-family: 'Raleway', sans-serif;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background var(--trans), color var(--trans), transform .15s;
+}
+
+.map-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.map-btn:hover {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.map-btn:active {
+  transform: scale(.95);
+}
+
+
 /* ============================================================
    ANSWER SECTION
    ============================================================ */
@@ -479,16 +520,17 @@ body::before {
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--text-muted);
+  text-align: center;
 }
 
 .answer-row {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: .75rem;
-  align-items: stretch;
 }
 
 .answer-input {
-  flex: 1;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -500,6 +542,8 @@ body::before {
   outline: none;
   transition: border-color var(--trans), box-shadow var(--trans);
   letter-spacing: .04em;
+  text-align: center;
+  width: 120px;
 }
 
 .answer-input::placeholder {

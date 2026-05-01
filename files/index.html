@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gincana Urbana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+ 
+<div class="page-wrapper">
+ 
+  <header class="site-header">
+    <span class="logo">👲 Gincana Wonguiana</span>
+    <span class="subtitle">Piensa · Acierta · Wonguea</span>
+  </header>
+ 
+  <main class="carousel-section">
+    <div class="carousel-container">
+ 
+      <button class="nav-btn prev-btn" id="prevBtn" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+ 
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="track">
+ 
+          <!-- Macro: cada .card tiene data-answer="N" con la respuesta correcta -->
+ 
+          <!-- 01 -->
+          <div class="card" data-answer="9" data-image="https://www.desenfunda.com/media/blog/c_digo_morse.png">
+            <div class="card-header" style="--accent:#c9a04a;">
+              <div class="card-title-row"><span class="card-number">Prueba 01</span><span class="card-badge">¿Almorsamos?</span></div>
+              <h2 class="card-title">Número en Morse: ----.</h2>
+              <p class="card-desc">Convierte la anterior combinación en morse a un número.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Número '1' en Morse es .----</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Número '6' en Morse es -....</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Número '8' en Morse es ---..</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿Me repites ese numerín?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 02 -->
+          <div class="card" data-answer="9" data-image="https://images3.memedroid.com/images/UPLOADED102/5d367031b2cea.jpeg">
+            <div class="card-header" style="--accent:#6abeab;">
+              <div class="card-title-row"><span class="card-number">Prueba 02</span><span class="card-badge">Mein Kampf</span></div>
+              <h2 class="card-title">¿Con cuántos lingotes de hierro se hace un bloque de hierro?</h2>
+              <p class="card-desc">Venga, sabes de sobra de qué estamos hablando.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>¿Sabes que es un juego de cubitos, no?</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>¿Cuántos huecos tiene una mesa de crafteo?</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Hermano no te voy a dar la cantidad exacta, piensa un poco.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿Cuántos lingotillos son jefe?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 03 -->
+          <div class="card" data-answer="Z" data-image="">
+            <div class="card-header" style="--accent:#6da8e8;">
+              <div class="card-title-row"><span class="card-number">Prueba 03</span><span class="card-badge">Chinatown</span></div>
+              <h2 class="card-title">Inicial de un compañero que expresaba constantemente: "Demonios"</h2>
+              <p class="card-desc">Recuerdos de la Florida.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>De ascencencia Wonguiana.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>También llamado Chin Lú.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Le caíamos especialmente bien.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿Cuál es la inicial de tu bestie?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 04 -->
+          <div class="card" data-answer="4" data-image="">
+            <div class="card-header" style="--accent:#e07070;">
+              <div class="card-title-row"><span class="card-number">Prueba 04</span><span class="card-badge">Videogays</span></div>
+              <h2 class="card-title">Cantidad de letras que tiene el mejor juego de plataformas con protagonista Zengye</h2>
+              <p class="card-desc">No way, un poco racista.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Es plataformero.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Fecha de salida: A este paso nunca.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Mario no puedes ser tan retrasado tío.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿Nombre del GOTY?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 05 -->
+          <div class="card" data-answer="Y" data-image="">
+            <div class="card-header" style="--accent:#a96dcc;">
+              <div class="card-title-row"><span class="card-number">Prueba 05</span><span class="card-badge">Juego de mierda</span></div>
+              <h2 class="card-title">Inicial del personaje al que pertenece este pelaso</h2>
+              <p class="card-desc">Esta va por ti Lucía.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Juego cancerígeno que ni Fran ni Jose tocan con un palo.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Suele ir 0/20/0.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Por favor, me da igual el WASD déjame en paz.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿De quién es el pelaso Pantene?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 06 -->
+          <div class="card" data-answer="4" data-image="">
+            <div class="card-header" style="--accent:#e8a44a;">
+              <div class="card-title-row"><span class="card-number">Prueba 06</span><span class="card-badge">Zonitas Valencianas</span></div>
+              <h2 class="card-title">Cifra que aparece en el nombre del Centro Comercial de Alfafar</h2>
+              <p class="card-desc">Tampoco es para tanto.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Su nombre se compone de "Letra Letra Número".</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>A Adriana le viene exageradamente mal venir a este sitio.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>50% de descuento en el VIPS.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿EME ENE QUÉ?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 07 -->
+          <div class="card" data-answer="L" data-image="">
+            <div class="card-header" style="--accent:#70c0e0;">
+              <div class="card-title-row"><span class="card-number">Prueba 07</span><span class="card-badge">Gúgel Maps</span></div>
+              <h2 class="card-title">Letra inicial de la siguiente localización: https://maps.app.goo.gl/yfby17E2y5JiZNqt7</h2>
+              <p class="card-desc">Vaya con los brasileiros.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Encima pone que es un Cementerio.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>... Sementerio...</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>¿Lo pillas? Semen... que hambre...</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ Vale va que no es pa tanto</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 08 -->
+          <div class="card" data-answer="0" data-image="">
+            <div class="card-header" style="--accent:#c96a6a;">
+              <div class="card-title-row"><span class="card-number">Prueba 08</span><span class="card-badge">Longitud Longitudinal</span></div>
+              <h2 class="card-title">Cifra del meridiano (longitud )donde se sitúa el observatorio de Greenwich</h2>
+              <p class="card-desc">Esta es complicada.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Piensa, si se le llama meridiano de Greenwich, dónde estará</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>¿Sabes lo que es la longitud en un mapa? Suele ir con la latitud...</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Puedes mirar el mapa la verdad nos hemos pasado un poco</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿Cuál es el número de gran valor?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 09 -->
+          <div class="card" data-answer="H" data-image="">
+            <div class="card-header" style="--accent:#7ab87a;">
+              <div class="card-title-row"><span class="card-number">Prueba 09</span><span class="card-badge">Videogays 2</span></div>
+              <h2 class="card-title">Rellena el hueco que falta "_OLLOW KNIGHT"</h2>
+              <p class="card-desc">Yo personalmente aún no lo he jugado</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Va Mario no es tam difícil, BICHEA un poco.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Hermano tienes la cabeza VACÍA..</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Va tio eres absolutamente retrasado por eso Adriana te engaña con Jose.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ Hitler lo jugó</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 10 -->
+          <div class="card" data-answer="X" data-image="">
+            <div class="card-header" style="--accent:#e8c44a;">
+              <div class="card-title-row"><span class="card-number">Prueba 10</span><span class="card-badge">This is Elon Musk</span></div>
+              <h2 class="card-title">Web donde antes habitaba un pájaro y ahora se suben posts de Wong</h2>
+              <p class="card-desc">Madafaking Elon de verdad.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Letra que triplicas para ver otro tipo de vídeos educativos.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Deriva también postea ahí.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Ahora está petao de nazis.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ EQUIS dé</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 11 -->
+          <div class="card" data-answer="5" data-image="">
+            <div class="card-header" style="--accent:#c07090;">
+              <div class="card-title-row"><span class="card-number">Prueba 11</span><span class="card-badge">Videogays 3</span></div>
+              <h2 class="card-title">Número de la entrega de la saga Far Cry en la que debes derrotar un culto</h2>
+              <p class="card-desc">Esta sí que no te la esperabas.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Me la pela que no te hayas jugado la saga, piensa un poco o pregunta a tus amigos.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>La saga no tiene tantos juegos eh</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Por el culo te la hinco.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ La verdad, el mejor después del 3</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 12 -->
+          <div class="card" data-answer="2" data-image="">
+            <div class="card-header" style="--accent:#6ab0d0;">
+              <div class="card-title-row"><span class="card-number">Prueba 12</span><span class="card-badge">Osama Been Lagging</span></div>
+              <h2 class="card-title">Cantidad de Torres que había en el World Trade Center antes de cierto evento multitudinario</h2>
+              <p class="card-desc">Poco pasó ahí</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p> No juguéis con aviones supongo. </p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p> Ahora solo queda una. </p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>¿11 S? 11 veceS tendría que haber pasado</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ Por culpa de esto ya no puedo pasar botellas de agua por el aeropuerto</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 13 -->
+          <div class="card" data-answer="N" data-image="">
+            <div class="card-header" style="--accent:#d4a060;">
+              <div class="card-title-row"><span class="card-number">Prueba 13</span><span class="card-badge">Gente sin derechos</span></div>
+              <h2 class="card-title">Rellena el hueco que falta: "_IGGER"</h2>
+              <p class="card-desc">Oopsi, ¿esto se puede subir a github?</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>Como los endermans, color de piel, roban bloques, y los metieron con la actualización de los melones</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Jose no lo puede decir</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Son como cucarachas que se amontonan.</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ Giga _igga 3000</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 14 -->
+          <div class="card" data-answer="2" data-image="">
+            <div class="card-header" style="--accent:#80b0a0;">
+              <div class="card-title-row"><span class="card-number">Prueba 14</span><span class="card-badge">Tic Tac Tic Tac</span></div>
+              <h2 class="card-title">Una hora y media antes de que llegue Lázaro</h2>
+              <p class="card-desc">Ah, ¿pero que al final viene o no?.</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>¿A qué hora viene Lázaro?</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>¿Pero viene de verdad?</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏁 Definitiva</span><p>Pero si solo viene para 2 horas qué va a hacer</p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ Estos moros</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+          <!-- 15 — FINAL -->
+          <div class="card card-final" data-answer="F" data-image="" data-image="">
+            <div class="card-header" style="--accent:#c9a04a;">
+              <div class="card-title-row"><span class="card-number">Prueba 15</span><span class="card-badge">Qué creído se lo tiene</span></div>
+              <h2 class="card-title">Inicial de la persona más carismática del grupo</h2>
+              <p class="card-desc">Que sepáis que me ha obligado a escribir esto, yo no estoy de acuerdo</p>
+            </div>
+            <div class="clues-section">
+              <p class="clues-label">🗝️ Pistas disponibles</p>
+              <div class="clues-list">
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 1</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 1</span><p>No es el cojo de Ulises.</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">👁️</span><span class="clue-hint-text">Pista 2</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag">Pista 2</span><p>Se dio un besito con el cumpleañero</p></div></div>
+                <div class="clue-item"><div class="clue-hidden"><div class="clue-meta"><span class="clue-eye">🏆</span><span class="clue-hint-text">Pista 3</span></div><button class="reveal-btn">Revelar</button></div><div class="clue-revealed"><span class="clue-label-tag clue-label-final">🏆 No suele tener dinero,... ni coche,... ni ganas de salir de su pueblo...</span><p></p></div></div>
+              </div>
+            </div>
+            <div class="answer-section">
+              <p class="answer-label">✏️ ¿De qué marikoneti hablamos?</p>
+              <div class="answer-row">
+                <input class="answer-input" type="text" maxlength="1" placeholder="…" autocomplete="off"/>
+                <button class="answer-btn">Comprobar</button>
+              </div>
+              <p class="answer-feedback"></p>
+            </div>
+          </div>
+ 
+        </div><!-- /track -->
+      </div><!-- /track-wrapper -->
+ 
+      <button class="nav-btn next-btn" id="nextBtn" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+ 
+    </div><!-- /carousel-container -->
+ 
+    <div class="dots" id="dots"></div>
+    <p class="counter" id="counter">1 / 15</p>
+ 
+  </main>
+</div>
+ 
+<script>
+  /* ── Datos de estado ── */
+  const TOTAL = 15;
+  const solved = Array(TOTAL).fill(false);
+  let current = 0;
+
+  /* ── Referencias DOM ── */
+  const track   = document.getElementById('track');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsEl  = document.getElementById('dots');
+  const counter = document.getElementById('counter');
+  const cards   = Array.from(track.querySelectorAll('.card'));
+
+  /* ── Crear dots ── */
+  cards.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Prueba ${i + 1}`);
+    dot.addEventListener('click', () => tryGoTo(i));
+    dotsEl.appendChild(dot);
+  });
+
+  /* ── Navegar — sin wrap-around ── */
+  function tryGoTo(index) {
+    // Bloquear wrap-around: no ir de 0 a 14 ni de 14 a 0
+    if (index < 0 || index >= TOTAL) return;
+    // Bloquear avance si la prueba actual no está resuelta
+    if (index > current && !solved[current]) {
+      shakeBlock();
+      return;
+    }
+    goTo(index);
+  }
+
+  function goTo(index) {
+    current = index;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    document.querySelectorAll('.dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+      d.classList.toggle('dot-solved', solved[i]);
+    });
+    updateNavBtns();
+    counter.textContent = `${current + 1} / ${TOTAL}`;
+  }
+
+  function updateNavBtns() {
+    // Prev: bloqueado (atenuado) en la primera prueba, oculto en ninguna
+    prevBtn.classList.toggle('btn-locked', current === 0);
+    prevBtn.classList.remove('btn-hidden');
+    // Next: oculto en la última prueba, bloqueado si no resuelta
+    const isLast   = current === TOTAL - 1;
+    const unlocked = solved[current];
+    nextBtn.classList.toggle('btn-hidden', isLast);
+    nextBtn.classList.toggle('btn-locked', !isLast && !unlocked);
+  }
+
+  function shakeBlock() {
+    // Re-trigger shake removing and re-adding the class
+    nextBtn.classList.remove('shake');
+    void nextBtn.offsetWidth;
+    nextBtn.classList.add('shake');
+    setTimeout(() => nextBtn.classList.remove('shake'), 500);
+    const input = cards[current].querySelector('.answer-input');
+    if (input) {
+      input.classList.remove('shake');
+      void input.offsetWidth;
+      input.classList.add('shake');
+      input.focus();
+      setTimeout(() => input.classList.remove('shake'), 500);
+    }
+  }
+
+  prevBtn.addEventListener('click', () => tryGoTo(current - 1));
+  nextBtn.addEventListener('click', () => tryGoTo(current + 1));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft')  tryGoTo(current - 1);
+    if (e.key === 'ArrowRight') tryGoTo(current + 1);
+  });
+
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) tryGoTo(current + (diff > 0 ? 1 : -1));
+  });
+
+  /* ── Inyectar imágenes en cards ── */
+  cards.forEach(card => {
+    const src = (card.dataset.image || '').trim();
+    // Insert image block between card-header and clues-section
+    const header = card.querySelector('.card-header');
+    const clues  = card.querySelector('.clues-section');
+    if (!header || !clues) return;
+
+    const block = document.createElement('div');
+    block.className = 'card-image-block';
+
+    if (src) {
+      block.innerHTML = `<img class="card-image" src="${src}" alt="Imagen de la prueba" loading="lazy"/>`;
+    } else {
+      block.innerHTML = `
+        <div class="card-image-placeholder">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17" cy="20" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6 32 L16 22 L24 30 L31 23 L42 34" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <span>Añade una imagen en <code>data-image="URL"</code></span>
+        </div>`;
+    }
+    card.insertBefore(block, clues);
+  });
+
+  /* ── Revelar pistas (una a una, en orden) ── */
+  // Al iniciar, desactivar todos los botones de revelar excepto el primero de cada lista
+  document.querySelectorAll('.clues-list').forEach(list => {
+    const btns = list.querySelectorAll('.reveal-btn');
+    btns.forEach((btn, i) => {
+      if (i > 0) btn.disabled = true;
+    });
+  });
+
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      const item = btn.closest('.clue-item');
+      if (item.classList.contains('is-revealed')) return;
+      item.classList.add('is-revealed');
+
+      // Habilitar el siguiente botón de esta lista, si existe
+      const list = item.closest('.clues-list');
+      const allItems = Array.from(list.querySelectorAll('.clue-item'));
+      const idx = allItems.indexOf(item);
+      if (idx < allItems.length - 1) {
+        const nextBtn = allItems[idx + 1].querySelector('.reveal-btn');
+        if (nextBtn) nextBtn.disabled = false;
+      }
+    });
+  });
+
+  /* ── Confeti ── */
+  function launchConfetti() {
+    const container = document.getElementById('confettiContainer');
+    const colors = ['#c9a04a','#e8d5a3','#4caf82','#6abeab','#e07070','#a96dcc','#6da8e8'];
+    for (let i = 0; i < 80; i++) {
+      const piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const left  = Math.random() * 100;
+      const delay = Math.random() * 2.5;
+      const dur   = 2.5 + Math.random() * 2;
+      const size  = 6 + Math.random() * 8;
+      const shape = Math.random() > 0.5 ? '50%' : '2px';
+      piece.style.cssText = `
+        left:${left}vw; top:-20px;
+        width:${size}px; height:${size}px;
+        background:${color};
+        border-radius:${shape};
+        animation-duration:${dur}s;
+        animation-delay:${delay}s;
+      `;
+      container.appendChild(piece);
+    }
+  }
+
+  /* ── Comprobar respuesta ── */
+  cards.forEach((card, i) => {
+    const input    = card.querySelector('.answer-input');
+    const btn      = card.querySelector('.answer-btn');
+    const feedback = card.querySelector('.answer-feedback');
+    const correct  = card.dataset.answer;
+
+    function check() {
+      const val = input.value.trim();
+      if (val === '') return;
+
+      if (val.toLowerCase() === correct.trim().toLowerCase()) {
+        solved[i] = true;
+
+        // Ocultar el área de respuesta y mostrar banner estilizado
+        feedback.style.display = 'none';
+        const row = card.querySelector('.answer-row');
+        row.style.display = 'none';
+        const label = card.querySelector('.answer-label');
+        label.style.display = 'none';
+
+        // Crear e insertar banner de prueba completada
+        const banner = document.createElement('div');
+        banner.className = 'card-solved-banner visible';
+        banner.innerHTML = `
+          <span class="card-solved-icon">✓</span>
+          <div>
+            <div class="card-solved-text">¡Prueba superada!</div>
+            <div class="card-solved-sub">Podéis avanzar a la siguiente</div>
+          </div>`;
+        card.querySelector('.answer-section').appendChild(banner);
+
+        updateNavBtns();
+
+        // Mostrar victoria si es la última
+        if (i === TOTAL - 1) {
+          setTimeout(() => {
+            document.getElementById('victoryOverlay').classList.add('visible');
+            launchConfetti();
+          }, 800);
+        }
+
+        // Avance automático tras 1.2 s (excepto última)
+        if (i < TOTAL - 1) {
+          setTimeout(() => goTo(i + 1), 1200);
+        }
+      } else {
+        feedback.textContent = '❌ Incorrecto. Revisad las pistas e intentadlo de nuevo.';
+        feedback.className = 'answer-feedback feedback-err';
+        input.classList.remove('shake');
+        void input.offsetWidth;
+        input.classList.add('shake');
+        setTimeout(() => input.classList.remove('shake'), 500);
+        input.value = '';
+        input.focus();
+      }
+    }
+
+    btn.addEventListener('click', check);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+  });
+
+  /* ── Estado inicial ── */
+  updateNavBtns();
+</script>
+        <!-- VICTORY OVERLAY -->
+        <div class="victory-overlay" id="victoryOverlay">
+          <div class="confetti-container" id="confettiContainer"></div>
+          <div class="victory-inner">
+
+            <!-- Hero image -->
+            <div class="victory-hero-wrap">
+              <img class="victory-hero-img" src="Spider-Man_2.jpg" alt="Marvel's Spider-Man 2"/>
+              <div class="victory-hero-glow"></div>
+            </div>
+
+            <!-- Dedication text -->
+            <div class="victory-text">
+              <span class="victory-eyebrow">&#127942; Gincana completada &#127942;</span>
+              <div class="victory-divider"></div>
+              <p class="victory-dedication">&#9829; &#161;Felicidades a nuestro Wong favorito, te queremos! &#9829;</p>
+              <div class="victory-divider"></div>
+              <p class="victory-solution-string"> El código por seguridad te lo pasamos por privi jeje :P</p>
+              <div class="victory-divider"></div>
+            </div>
+
+            <!-- Photo grid 2×2 -->
+            <div class="victory-photo-grid">
+              <div class="victory-photo-item">
+                <img src="Spider-Man_2_2.jpg" alt=""/>
+              </div>
+              <div class="victory-photo-item">
+                <img src="Spider-Man_2_3.jpg" alt=""/>
+              </div>
+              <div class="victory-photo-item">
+                <img src="Spider-Man_2_4.jpg" alt=""/>
+              </div>
+              <div class="victory-photo-item">
+                <img src="Spider-Man_2_5.jpg" alt=""/>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+</body>
+</html>
